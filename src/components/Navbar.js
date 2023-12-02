@@ -1,12 +1,15 @@
 import logo from '../logo.svg';
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return (  
         <nav className="navbar">
             <img src={logo} className="App-logo" alt="logo"/>
-            <h1>Mikołaj Frankiewicz</h1>
+            <h1>Jakub Grapatyn</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/create">Nowy blog</a>
+                <Link to="/">Home</Link>
+                <Link to="/create">Nowy blog</Link>
+                
             </div>
         </nav>
         
