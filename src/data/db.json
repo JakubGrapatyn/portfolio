@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "Mój pierwszy blog",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet hendrerit risus. Donec commodo elit diam, congue condimentum nisi scelerisque et. Sed auctor mollis varius. Praesent ornare interdum magna, quis pretium eros cursus eu. Fusce massa massa, congue in mattis vitae, consectetur sit amet ante. Aliquam viverra lobortis maximus. Aliquam non convallis metus. Morbi suscipit sollicitudin erat eu vulputate. Mauris placerat fermentum felis. Quisque consequat diam sed tempus pulvinar.",
+            "author": "Marcin",
+            "id": 1
+        },
+        {
+            "title": "Mój drugi blog!",
+            "body": "Donec at eros quis enim tincidunt finibus eget sit amet augue. Etiam venenatis vulputate lectus vitae elementum. Aliquam nec felis sem. Maecenas nec velit ut mi lobortis vestibulum sit amet imperdiet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mollis viverra sapien id congue. Nulla eget efficitur mauris. Aliquam id ornare ligula. Donec imperdiet feugiat magna, in fringilla ex eleifend a. Sed facilisis risus turpis, eu posuere sapien auctor sit amet. Donec tellus enim, laoreet et enim sed, posuere dignissim libero. Vestibulum et dui ut risus gravida viverra. Nulla efficitur tempor diam, ac faucibus velit.",
+            "author": "Marcel",
+            "id": 2
+        }
+    ]
+}
