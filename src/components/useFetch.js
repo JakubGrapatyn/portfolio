@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
  
 const useFetch = (url) => {
     const [data, setData] = useState(null);
@@ -7,7 +7,7 @@ const useFetch = (url) => {
  
     useEffect(()=>{
         setTimeout(()=> {
-            fetch(url)
+            fetch(`http://localhost:8000/blogs`)
             .then(res => {
                 if(!res.ok) {
                     throw Error("Nie można pobrać danych z endpointa");

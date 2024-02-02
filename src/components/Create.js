@@ -1,38 +1,36 @@
-import { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const Create =() =>{
-    const[title,setTitle]=useState('');
-    const[body,setBody]=useState('');
-    const[author,setAuthor]=useState('');
 
+const Create =() => {
+
+const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_b63n3vj', 'template_cf30jbx', form.current, 'fO1TdZh3GZk6h815H')
+    .then((result) => {
+        console.log(result.text);
+        console.log("wiadomość wysłano")
+    }, (error) => {
+        console.log(error.text);
+    });
+};
     return(
-        <div className="create">
-            <h2> Dodaj nowy blog</h2>
-            <form>
-                <label>
-                    Tytuł bloga
-                </label>
-                <input type="text" required value={title} onChange={(e) =>setTitle(e.target.value)}/>
-                <label>
-                    Treść bloga
-                </label>
-                <input type="text" required value={body} onChange={(e) =>setBody(e.target.value)}/>
-                <label>
-                    Autor bloga
-                </label>
-                <select value={author} onChange={(e) =>setAuthor(e.target.value)}>
-                    <option value={"Marcin"}>Marcin</option>
-                    <option value={"Jan"}>Jan</option>
-                    <option value={"Karol"}>Karol</option>
-                </select>
-                <button>Dodaj Blog</button>
-
-                <p>{title}</p>
-                <p>{body}</p>
-                <p>{author}</p>
-            </form>
-        </div>
+        <div className='create'>
+        <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input  type="submit" value="Wyślij" />
+      </form>
+      </div>
     )
-}
+};
 
 export default Create;
+

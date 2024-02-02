@@ -26,7 +26,7 @@
 * {
   margin: 0;
   font-family: 'Roboto Mono', monospace;
-  color: #646669;
+  color: #81a1d1;
   background-color: #323437;
 }
  
@@ -101,11 +101,10 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .create label {
   text-align: left;
   display: block;
-}
-.create h2 {
   font-size: 20px;
   color: #e2b714;
   margin-bottom: 30px;
@@ -117,12 +116,32 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  
 }
-.create button {
-  background: #e2b714;
-  color: #323437;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
+.pogoda{
+  text-align: center;
 }
+
+.informacje { 
+  
+  text-align: left;
+  font-style: italic;
+  font-size: 25px;
+  width: 100%;
+}
+.zdjecie {
+ float: right; 
+ height: 900px;
+  width: 50%;
+  overflow: hidden; 
+  margin-left: 10px;
+}
+
+.kontakt { 
+  float: none;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: double;
+}
+
+
